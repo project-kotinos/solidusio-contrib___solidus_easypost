@@ -11,7 +11,9 @@ RSpec.describe Spree::Shipment, :vcr do
     subject { shipment.easypost_shipment }
 
     shared_examples 'an easypost shipment' do
-      it { is_expected.to be_a EasyPost::Shipment }
+      it 'is an EasyPost::Shipment object' do
+        expect(subject).to be_a(EasyPost::Shipment)
+      end
     end
 
     context 'it is a new shipment' do

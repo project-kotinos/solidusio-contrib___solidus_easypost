@@ -17,11 +17,11 @@ module Spree
         lastname: 'Scamander',
         address1: '200 19th St',
         city: 'Birmingham',
-        state: Spree::State.first,
-        country: FactoryBot.create(:country),
+        state: Spree::State.first || create(:state),
+        country: Spree::Country.first || create(:country),
         zipcode: 35203,
         phone: '123456789'
-       )
+      )
     end
 
     before do

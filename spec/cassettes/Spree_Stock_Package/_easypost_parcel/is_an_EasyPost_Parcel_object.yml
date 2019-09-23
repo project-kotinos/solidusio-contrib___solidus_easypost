@@ -9,16 +9,16 @@ http_interactions:
     headers:
       Accept:
       - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
       User-Agent:
-      - EasyPost/v2 RubyClient/2.7.0
+      - EasyPost/v2 RubyClient/3.0.1
       Authorization:
       - Bearer CvzYtuda6KRI9JjG7SAHbA
       Content-Type:
       - application/x-www-form-urlencoded
       Content-Length:
       - '19'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Host:
       - api.easypost.com
   response:
@@ -33,7 +33,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       X-Ep-Request-Uuid:
-      - 05e1afba-1653-4005-a0f7-a6054f12de52
+      - b17032b05d775cd4ee81b7e900061c58
       Cache-Control:
       - no-cache, no-store, must-revalidate, private
       Pragma:
@@ -41,32 +41,27 @@ http_interactions:
       Expires:
       - '0'
       Location:
-      - "/api/v2/parcels/prcl_c7f8c01e29474f04bbd03427280bdf0e"
+      - "/api/v2/parcels/prcl_95be182080ce4263b7d44db24a93a44d"
       Content-Type:
       - application/json; charset=utf-8
       X-Runtime:
-      - '0.026808'
-      Content-Encoding:
-      - gzip
+      - '0.039064'
       Transfer-Encoding:
       - chunked
       X-Node:
-      - 0c5331f72e
-      - easypost
-      - web5sj
+      - bigweb2sj
+      X-Version-Label:
+      - easypost-201909091924-20b1629d24-master
       X-Backend:
       - easypost
       X-Proxied:
-      - lb5sj, 8657dcde98
+      - extlb2sj ff5a2958df
+      - intlb1sj ff5a2958df
       Strict-Transport-Security:
       - max-age=15768000; includeSubDomains; preload
     body:
       encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAA4SMOw7CMBBE77J1gjbGyIlPQUFFE9neTWIwiWUcUSDujpH4
-        lJTz5s3cwRNoiMmF3qmhddiw6KSSA0prCbdSKNGipQEZKljsiV0ug71JjkMh
-        LrHJTL15UYGNqnFXozgI1FJq0R2Ls0b66wSexzyBntcQKrh5+oWJ/TjlT4qJ
-        iQc/l79o3NmM/B29vQY3WMFlodJA5muGxxMAAP//AwDeXV/F5wAAAA==
+      string: '{"id":"prcl_95be182080ce4263b7d44db24a93a44d","object":"Parcel","created_at":"2019-09-10T08:20:36Z","updated_at":"2019-09-10T08:20:36Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":10.0,"mode":"test"}'
     http_version: 
-  recorded_at: Tue, 02 May 2017 20:44:29 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Tue, 10 Sep 2019 08:20:36 GMT
+recorded_with: VCR 5.0.0

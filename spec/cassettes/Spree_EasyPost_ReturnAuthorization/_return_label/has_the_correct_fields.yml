@@ -9,8 +9,6 @@ http_interactions:
     headers:
       Accept:
       - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
       User-Agent:
       - EasyPost/v2 RubyClient/3.0.1
       Authorization:
@@ -19,6 +17,8 @@ http_interactions:
       - application/x-www-form-urlencoded
       Content-Length:
       - '148'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Host:
       - api.easypost.com
   response:
@@ -33,7 +33,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       X-Ep-Request-Uuid:
-      - 7ab50325-fcb1-44ff-909c-7032a83da006
+      - d9da60c35d775d13ee738aaf0000274c
       Cache-Control:
       - no-cache, no-store, must-revalidate, private
       Pragma:
@@ -41,33 +41,31 @@ http_interactions:
       Expires:
       - '0'
       Location:
-      - "/api/v2/addresses/adr_82b19dcafd12401c8eaef1a44049b4dd"
+      - "/api/v2/addresses/adr_b45a27fdb6374ae0998efc0f80a52fd8"
       Content-Type:
       - application/json; charset=utf-8
       X-Runtime:
-      - '0.048442'
-      Content-Encoding:
-      - gzip
+      - '0.034519'
       Transfer-Encoding:
       - chunked
       X-Node:
       - bigweb4sj
       X-Version-Label:
-      - easypost-201812180052-0a8d062527-master
+      - easypost-201909091924-20b1629d24-master
       X-Backend:
       - easypost
       X-Proxied:
-      - extlb1wdc 130594cc1d
-      - intlb1wdc 130594cc1d
-      - intlb2sj 130594cc1d
+      - extlb2wdc ff5a2958df
+      - intlb1wdc ff5a2958df
+      - intlb2sj ff5a2958df
       Strict-Transport-Security:
       - max-age=15768000; includeSubDomains; preload
     body:
       encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAA4SQsW7DMAxEfyXQ3ACmIheKt6wF2iXt0sWgTRpRIEuGLBttg/x76QTO0KWaxNM78sSLcqQqhZRqqxvYU4sdgTYFtJaRO0BjCrNvDJF6UrE5c5uFPxAlHkeR2sSYmWpcZF2A3YLegn2HsjJFpeFTmGmgf5mAPasqTN5Lz9gPGL7XcsyJOYN4YQeb48bm0+Yws1pf9MPnspjUK4bZeX8HZLBIby9S/LhBroW1u3IJHqeQ08J/HKUcTjHwLZ425TPIEZF7dH7t3kdagMxjXuyYkuNUd9g6f5t7p2Qtjjhkhw9jx8QJfZ3xq162vf5Kov3RZk6ucy1mF8Ooqsv1+gsAAP//AwAjVg6RoAEAAA==
+      string: '{"id":"adr_b45a27fdb6374ae0998efc0f80a52fd8","object":"Address","created_at":"2019-09-10T08:21:39Z","updated_at":"2019-09-10T08:21:39Z","name":null,"company":null,"street1":"131
+        S 8th Ave","street2":null,"city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"state_tax_id":null,"verifications":{}}'
     http_version: 
-  recorded_at: Tue, 18 Dec 2018 15:40:21 GMT
+  recorded_at: Tue, 10 Sep 2019 08:21:40 GMT
 - request:
     method: post
     uri: https://api.easypost.com/v2/addresses
@@ -77,8 +75,6 @@ http_interactions:
     headers:
       Accept:
       - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
       User-Agent:
       - EasyPost/v2 RubyClient/3.0.1
       Authorization:
@@ -87,6 +83,8 @@ http_interactions:
       - application/x-www-form-urlencoded
       Content-Length:
       - '222'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Host:
       - api.easypost.com
   response:
@@ -101,7 +99,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       X-Ep-Request-Uuid:
-      - de9d12b8-2132-4d34-92c5-2681f9ee1cad
+      - d9da60c35d775d14ee72f5ef00002770
       Cache-Control:
       - no-cache, no-store, must-revalidate, private
       Pragma:
@@ -109,32 +107,33 @@ http_interactions:
       Expires:
       - '0'
       Location:
-      - "/api/v2/addresses/adr_330a6e7ecb7c4c1cab56f4c445e9e1f3"
+      - "/api/v2/addresses/adr_39b51c2a57d248f5aa9006f5868ff790"
       Content-Type:
       - application/json; charset=utf-8
       X-Runtime:
-      - '0.049751'
-      Content-Encoding:
-      - gzip
+      - '0.034028'
       Transfer-Encoding:
       - chunked
       X-Node:
-      - bigweb3sj
+      - bigweb7sj
       X-Version-Label:
-      - easypost-201812180052-0a8d062527-master
+      - easypost-201909091924-20b1629d24-master
       X-Backend:
       - easypost
+      X-Canary:
+      - direct
       X-Proxied:
-      - extlb2sj 130594cc1d
-      - intlb1sj 130594cc1d
+      - extlb2wdc ff5a2958df
+      - intlb2sj ff5a2958df
+      - intlb2wdc ff5a2958df
       Strict-Transport-Security:
       - max-age=15768000; includeSubDomains; preload
     body:
       encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAA4SRu27DMAxFfyXQnACWH4ntLWimAO3Qx9LFoCUKYSFLhqykjyD/XsoJMnSpJvLy6PJCOgvSohWgQ1cUGaxxg6rfqFJJBX21NqUqywoblKYQS+H7D1SR+a3WAaeJJRUQIuoOkpxnsl7JfCXrV1m1Zdbm+Tszx1H/yzgYkKd7f3CLncfk7IcR3DeLD7dqKaYYEKNMCRY7MgYDurh49qDvw5yHTz7EwydOMdlQTB6P4E5kLc4cp0nUnpsfGrnM6rqo5p1HF0Pi3164HQ/eJbKaTyabhkUcgKxo3dHapRi8TkC87YIQCENnQJGd914pfivSnJTgftGgxgC2i/DVpS+4qnO0P9oJAxlSEMm7SbTny+UXAAD//wMA84gOhbUBAAA=
+      string: '{"id":"adr_39b51c2a57d248f5aa9006f5868ff790","object":"Address","created_at":"2019-09-10T08:21:40Z","updated_at":"2019-09-10T08:21:40Z","name":"John
+        Doe","company":"Company","street1":"A Different Road","street2":"Northwest","city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"5555550199","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"state_tax_id":null,"verifications":{}}'
     http_version: 
-  recorded_at: Tue, 18 Dec 2018 15:40:22 GMT
+  recorded_at: Tue, 10 Sep 2019 08:21:41 GMT
 - request:
     method: post
     uri: https://api.easypost.com/v2/parcels
@@ -144,8 +143,6 @@ http_interactions:
     headers:
       Accept:
       - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
       User-Agent:
       - EasyPost/v2 RubyClient/3.0.1
       Authorization:
@@ -154,6 +151,8 @@ http_interactions:
       - application/x-www-form-urlencoded
       Content-Length:
       - '17'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Host:
       - api.easypost.com
   response:
@@ -168,7 +167,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       X-Ep-Request-Uuid:
-      - cc89f044-ec48-4e2b-bc1f-b690a8ae5bda
+      - d9da60c35d775d15ee6e86a60000278b
       Cache-Control:
       - no-cache, no-store, must-revalidate, private
       Pragma:
@@ -176,44 +175,39 @@ http_interactions:
       Expires:
       - '0'
       Location:
-      - "/api/v2/parcels/prcl_20d8eeeba2b64f30aeb34e052fbae098"
+      - "/api/v2/parcels/prcl_3138930cc902406b80c69b1cf79871c5"
       Content-Type:
       - application/json; charset=utf-8
       X-Runtime:
-      - '0.032866'
-      Content-Encoding:
-      - gzip
+      - '0.028035'
       Transfer-Encoding:
       - chunked
       X-Node:
-      - bigweb3sj
+      - bigweb4sj
       X-Version-Label:
-      - easypost-201812180052-0a8d062527-master
+      - easypost-201909091924-20b1629d24-master
       X-Backend:
       - easypost
       X-Proxied:
-      - extlb2wdc 130594cc1d
-      - intlb1sj 130594cc1d
-      - intlb1wdc 130594cc1d
+      - extlb2wdc ff5a2958df
+      - intlb1sj ff5a2958df
+      - intlb1wdc ff5a2958df
       Strict-Transport-Security:
       - max-age=15768000; includeSubDomains; preload
     body:
       encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAA4SMOw7CMBBE77J1gtZOgoxPQUFFE63tTWIwiWUcUSDujpH4lJTz5s3cwTvQEJMNvUSnmNmQNNt2aJDYNC1jJwdDjDsFFSzmxDaXwZ6S5VCITUyZXU8vKlGoWshaqIPodItaNsfirNH9dQLPY55Az2sIFdy8+4WJ/TjlT4qJHQ9+Ln+R7JlG/o7ensANVnBZXGkg8zXD4wkAAP//AwAUDMhJ5wAAAA==
+      string: '{"id":"prcl_3138930cc902406b80c69b1cf79871c5","object":"Parcel","created_at":"2019-09-10T08:21:41Z","updated_at":"2019-09-10T08:21:41Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":10.0,"mode":"test"}'
     http_version: 
-  recorded_at: Tue, 18 Dec 2018 15:40:23 GMT
+  recorded_at: Tue, 10 Sep 2019 08:21:42 GMT
 - request:
     method: post
     uri: https://api.easypost.com/v2/shipments
     body:
       encoding: UTF-8
-      string: shipment[from_address][id]=adr_82b19dcafd12401c8eaef1a44049b4dd&shipment[to_address][id]=adr_330a6e7ecb7c4c1cab56f4c445e9e1f3&shipment[parcel][id]=prcl_20d8eeeba2b64f30aeb34e052fbae098&shipment[is_return]=true
+      string: shipment[from_address][id]=adr_b45a27fdb6374ae0998efc0f80a52fd8&shipment[to_address][id]=adr_39b51c2a57d248f5aa9006f5868ff790&shipment[parcel][id]=prcl_3138930cc902406b80c69b1cf79871c5&shipment[is_return]=true
     headers:
       Accept:
       - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
       User-Agent:
       - EasyPost/v2 RubyClient/3.0.1
       Authorization:
@@ -222,6 +216,8 @@ http_interactions:
       - application/x-www-form-urlencoded
       Content-Length:
       - '209'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Host:
       - api.easypost.com
   response:
@@ -236,7 +232,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       X-Ep-Request-Uuid:
-      - f6209ad7-dcdd-4fc8-a545-816a3d20a3f8
+      - d9da60c35d775d16ee71d002000027a6
       Cache-Control:
       - no-cache, no-store, must-revalidate, private
       Pragma:
@@ -244,43 +240,43 @@ http_interactions:
       Expires:
       - '0'
       Location:
-      - "/api/v2/shipments/shp_5a01bebcf1334033bd09b501077fefd7"
+      - "/api/v2/shipments/shp_f52a735d150741019393e514b8bcb448"
       Content-Type:
       - application/json; charset=utf-8
       X-Runtime:
-      - '0.322076'
-      Content-Encoding:
-      - gzip
+      - '0.264115'
       Transfer-Encoding:
       - chunked
       X-Node:
-      - bigweb1sj
+      - bigweb6sj
       X-Version-Label:
-      - easypost-201812180052-0a8d062527-master
+      - easypost-201909091924-20b1629d24-master
       X-Backend:
       - easypost
       X-Proxied:
-      - extlb1sj 130594cc1d
-      - intlb2sj 130594cc1d
+      - extlb2wdc ff5a2958df
+      - intlb1wdc ff5a2958df
+      - intlb2sj ff5a2958df
       Strict-Transport-Security:
       - max-age=15768000; includeSubDomains; preload
     body:
       encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAA+xY32/bNhD+Vww9pwZJkfrht2DJHgosCJJtDxsK4UQeba6yJFBUUrfI/z5Stmwl6WoXCJoFqJ7E4x15vO+740lfImkRHKoCXLSIGKHZO8re0ex3KhacLBj/KzqLTFdYdL2to4WzPZ5Fa+w6WGIXLf7+4EeNQm/ssHNeuWmdaWo/9SWSvbVYy42f/OP2ws+1sFlj7cKc27TB6Pby6uLyJno4iyoosSqUdyZa1H1VnUXhvQB1B7X0MuJ1LGoMK+5VOgeu93tFff2xbu5rv4ezID+aelnIwa2tXt+qo6cswclVYdRosx2PO0xlu+OPQtl3rll3hal1M8q0bdbed2W9ajhuWDYCZYuMlTRXErSijBMqMwTUFDgnPC+5UiGC5T8og6PnO/uzYyjR4P+RMw46NawPbjfrFurNIZQW0VFvS2M6u51lbjU7v8NonGF7O+MCor9BfWeqaqswoBZdvfeDz6b1ryTLYhEcb/ra2S0DAgFWTY2De4yLhPrHC3ENphpXf0wmCdYatIUGaaph362WD4tRnkkG9oYaFVqoCgefJiAOrj2R3aE12kgYefrgmWXqrrcwYVZj/XIToxasxGoPZWtlVTCiMkQsgZUJ1zEBLGOORDBdApI8m2J5vbU/CmV8ApSDToX10q1G9+6NOgxWaJYrt/fc+shoU/v1Wp8aE+Le7/QomZPHkfcRaRsfuyUWQ17u4+7dClm/i0IYFhSIIoJmUrGMEy1KiSLTmeBZzhSIeBqFm0CUozHgJ8Rg0HlMlg7tnQkIRpef2jFxtgQa+HcdGGi3VGV0PuDzrET5QufZWIxqfJ6Sg/SZdmU6VzxZcpA901RYGU+8ja9wm305mQgnZW8qLJY9eF46RB9vDVXnq68/bfHV5bqVaUN9HWjrR20hgNASS6lpHHMSx6UieSkIJWmqUat0kmIgh1zd2koo1q4U9E8kngtTtFlMRIJpkkke85QkZckgjRMeK8IE5OIV0P7V2GmxeIZ1PBfkONR8zsWJSO8WPAlo9oIosx8DsV8DUqAyp9onsYrzBIGmIqO0TBlq+QoQX1vT2FD//xvlZL69cL6NcnJ6PidzIU5Fmb4gyvTHoJxzIfOE5CnhkkMqSsY4iExxmaYgS/IaKA935C1WYddvIS1OQlqcms/fg/TbyOcPQ6/c1+pJ/9pJqAvd2PVeMATb42UnZxla6BD43bD5aicb+4bH3wQoy1RySSWUItGeS1xgjlQ/uvdP7mTZCRxih042et+s6tlFM7Bz7GejX3Zv06b2fHZh9PD14GY3DahpXxtdNdat7nct5wu0t2J4CM3z/0l723dtV3wenKNDTviPuZ+fJ2/n86TsNyHff2bhm87CUHh3/0w0jn9Pvqfw75G83V0b0cO/AAAA//8DANYciJ3CEQAA
+      string: '{"created_at":"2019-09-10T08:21:42Z","is_return":true,"messages":[],"mode":"test","options":{"currency":"USD","payment":{"type":"SENDER"},"label_date":null,"date_advance":0},"reference":null,"status":"unknown","tracking_code":null,"updated_at":"2019-09-10T08:21:42Z","batch_id":null,"batch_status":null,"batch_message":null,"customs_info":null,"from_address":{"id":"adr_b45a27fdb6374ae0998efc0f80a52fd8","object":"Address","created_at":"2019-09-10T08:21:39Z","updated_at":"2019-09-10T08:21:39Z","name":null,"company":null,"street1":"131
+        S 8th Ave","street2":null,"city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"state_tax_id":null,"verifications":{}},"insurance":null,"order_id":null,"parcel":{"id":"prcl_3138930cc902406b80c69b1cf79871c5","object":"Parcel","created_at":"2019-09-10T08:21:41Z","updated_at":"2019-09-10T08:21:41Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":10.0,"mode":"test"},"postage_label":null,"rates":[{"id":"rate_727ff2fa71104793971acb7b556891e4","object":"Rate","created_at":"2019-09-10T08:21:42Z","updated_at":"2019-09-10T08:21:42Z","mode":"test","service":"First","carrier":"USPS","rate":"3.82","currency":"USD","retail_rate":"5.19","retail_currency":"USD","list_rate":"3.82","list_currency":"USD","delivery_days":2,"delivery_date":null,"delivery_date_guaranteed":false,"est_delivery_days":2,"shipment_id":"shp_f52a735d150741019393e514b8bcb448","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_0e5fdf091aec4dc8857302ec43a06e53","object":"Rate","created_at":"2019-09-10T08:21:42Z","updated_at":"2019-09-10T08:21:42Z","mode":"test","service":"Express","carrier":"USPS","rate":"22.74","currency":"USD","retail_rate":"25.60","retail_currency":"USD","list_rate":"22.74","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":false,"est_delivery_days":null,"shipment_id":"shp_f52a735d150741019393e514b8bcb448","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_8474e72ad57641fb8b7bb20f649a7440","object":"Rate","created_at":"2019-09-10T08:21:43Z","updated_at":"2019-09-10T08:21:43Z","mode":"test","service":"Priority","carrier":"USPS","rate":"6.95","currency":"USD","retail_rate":"7.35","retail_currency":"USD","list_rate":"6.95","list_currency":"USD","delivery_days":1,"delivery_date":null,"delivery_date_guaranteed":false,"est_delivery_days":1,"shipment_id":"shp_f52a735d150741019393e514b8bcb448","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_56f3355be72a45a29f3783f1a539b76c","object":"Rate","created_at":"2019-09-10T08:21:43Z","updated_at":"2019-09-10T08:21:43Z","mode":"test","service":"ParcelSelect","carrier":"USPS","rate":"6.85","currency":"USD","retail_rate":"6.85","retail_currency":"USD","list_rate":"6.85","list_currency":"USD","delivery_days":2,"delivery_date":null,"delivery_date_guaranteed":false,"est_delivery_days":2,"shipment_id":"shp_f52a735d150741019393e514b8bcb448","carrier_account_id":"ca_mtb51Ve0"}],"refund_status":null,"scan_form":null,"selected_rate":null,"tracker":null,"to_address":{"id":"adr_39b51c2a57d248f5aa9006f5868ff790","object":"Address","created_at":"2019-09-10T08:21:40Z","updated_at":"2019-09-10T08:21:40Z","name":"John
+        Doe","company":"Company","street1":"A Different Road","street2":"Northwest","city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"5555550199","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"state_tax_id":null,"verifications":{}},"usps_zone":1,"return_address":{"id":"adr_b45a27fdb6374ae0998efc0f80a52fd8","object":"Address","created_at":"2019-09-10T08:21:39Z","updated_at":"2019-09-10T08:21:39Z","name":null,"company":null,"street1":"131
+        S 8th Ave","street2":null,"city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"state_tax_id":null,"verifications":{}},"buyer_address":{"id":"adr_39b51c2a57d248f5aa9006f5868ff790","object":"Address","created_at":"2019-09-10T08:21:40Z","updated_at":"2019-09-10T08:21:40Z","name":"John
+        Doe","company":"Company","street1":"A Different Road","street2":"Northwest","city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"5555550199","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"state_tax_id":null,"verifications":{}},"forms":[],"fees":[],"id":"shp_f52a735d150741019393e514b8bcb448","object":"Shipment"}'
     http_version: 
-  recorded_at: Tue, 18 Dec 2018 15:40:24 GMT
+  recorded_at: Tue, 10 Sep 2019 08:21:43 GMT
 - request:
     method: post
-    uri: https://api.easypost.com/v2/shipments/shp_5a01bebcf1334033bd09b501077fefd7/buy
+    uri: https://api.easypost.com/v2/shipments/shp_f52a735d150741019393e514b8bcb448/buy
     body:
       encoding: UTF-8
-      string: rate[id]=rate_1a0d0518cd2840f5bce58f854892da53
+      string: rate[id]=rate_727ff2fa71104793971acb7b556891e4
     headers:
       Accept:
       - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
       User-Agent:
       - EasyPost/v2 RubyClient/3.0.1
       Authorization:
@@ -289,6 +285,8 @@ http_interactions:
       - application/x-www-form-urlencoded
       Content-Length:
       - '46'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Host:
       - api.easypost.com
   response:
@@ -303,7 +301,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       X-Ep-Request-Uuid:
-      - 98096466-ef01-4213-bf36-daa1bee94a65
+      - d9da60c35d775d17ee6e8aa3000027c6
       Cache-Control:
       - no-cache, no-store, must-revalidate, private
       Pragma:
@@ -313,27 +311,28 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       X-Runtime:
-      - '1.094804'
-      Content-Encoding:
-      - gzip
+      - '1.323595'
       Transfer-Encoding:
       - chunked
       X-Node:
-      - bigweb6sj
+      - bigweb4sj
       X-Version-Label:
-      - easypost-201812180052-0a8d062527-master
+      - easypost-201909091924-20b1629d24-master
       X-Backend:
       - easypost
       X-Proxied:
-      - extlb1wdc 130594cc1d
-      - intlb1sj 130594cc1d
-      - intlb1wdc 130594cc1d
+      - extlb2wdc ff5a2958df
+      - intlb1wdc ff5a2958df
+      - intlb2sj ff5a2958df
       Strict-Transport-Security:
       - max-age=15768000; includeSubDomains; preload
     body:
       encoding: ASCII-8BIT
-      string: !binary |-
-        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
+      string: '{"created_at":"2019-09-10T08:21:42Z","is_return":true,"messages":[],"mode":"test","options":{"currency":"USD","payment":{"type":"SENDER"},"label_date":null,"date_advance":0},"reference":null,"status":"unknown","tracking_code":"9400136897846027000202","updated_at":"2019-09-10T08:21:44Z","batch_id":null,"batch_status":null,"batch_message":null,"customs_info":null,"from_address":{"id":"adr_b45a27fdb6374ae0998efc0f80a52fd8","object":"Address","created_at":"2019-09-10T08:21:39Z","updated_at":"2019-09-10T08:21:44Z","name":null,"company":null,"street1":"131
+        S 8th Ave","street2":null,"city":"Manville","state":"NJ","zip":"08835-1715","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":true,"federal_tax_id":null,"state_tax_id":null,"verifications":{"zip4":{"success":true,"errors":[],"details":null}}},"insurance":null,"order_id":null,"parcel":{"id":"prcl_3138930cc902406b80c69b1cf79871c5","object":"Parcel","created_at":"2019-09-10T08:21:41Z","updated_at":"2019-09-10T08:21:41Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":10.0,"mode":"test"},"postage_label":{"object":"PostageLabel","id":"pl_e201a2c0f4574d3f85c17c6af268fdff","created_at":"2019-09-10T08:21:44Z","updated_at":"2019-09-10T08:21:44Z","date_advance":0,"integrated_form":"none","label_date":"2019-09-10T08:21:44Z","label_resolution":300,"label_size":"4x6","label_type":"default","label_file_type":"image/png","label_url":"https://easypost-files.s3-us-west-2.amazonaws.com/files/postage_label/20190910/b67ae5c969644e80ad57447a25a29cbd.png","label_pdf_url":null,"label_zpl_url":null,"label_epl2_url":null,"label_file":null},"rates":[{"id":"rate_727ff2fa71104793971acb7b556891e4","object":"Rate","created_at":"2019-09-10T08:21:42Z","updated_at":"2019-09-10T08:21:42Z","mode":"test","service":"First","carrier":"USPS","rate":"3.82","currency":"USD","retail_rate":"5.19","retail_currency":"USD","list_rate":"3.82","list_currency":"USD","delivery_days":2,"delivery_date":null,"delivery_date_guaranteed":false,"est_delivery_days":2,"shipment_id":"shp_f52a735d150741019393e514b8bcb448","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_0e5fdf091aec4dc8857302ec43a06e53","object":"Rate","created_at":"2019-09-10T08:21:42Z","updated_at":"2019-09-10T08:21:42Z","mode":"test","service":"Express","carrier":"USPS","rate":"22.74","currency":"USD","retail_rate":"25.60","retail_currency":"USD","list_rate":"22.74","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":false,"est_delivery_days":null,"shipment_id":"shp_f52a735d150741019393e514b8bcb448","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_8474e72ad57641fb8b7bb20f649a7440","object":"Rate","created_at":"2019-09-10T08:21:43Z","updated_at":"2019-09-10T08:21:43Z","mode":"test","service":"Priority","carrier":"USPS","rate":"6.95","currency":"USD","retail_rate":"7.35","retail_currency":"USD","list_rate":"6.95","list_currency":"USD","delivery_days":1,"delivery_date":null,"delivery_date_guaranteed":false,"est_delivery_days":1,"shipment_id":"shp_f52a735d150741019393e514b8bcb448","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_56f3355be72a45a29f3783f1a539b76c","object":"Rate","created_at":"2019-09-10T08:21:43Z","updated_at":"2019-09-10T08:21:43Z","mode":"test","service":"ParcelSelect","carrier":"USPS","rate":"6.85","currency":"USD","retail_rate":"6.85","retail_currency":"USD","list_rate":"6.85","list_currency":"USD","delivery_days":2,"delivery_date":null,"delivery_date_guaranteed":false,"est_delivery_days":2,"shipment_id":"shp_f52a735d150741019393e514b8bcb448","carrier_account_id":"ca_mtb51Ve0"}],"refund_status":null,"scan_form":null,"selected_rate":{"id":"rate_727ff2fa71104793971acb7b556891e4","object":"Rate","created_at":"2019-09-10T08:21:42Z","updated_at":"2019-09-10T08:21:42Z","mode":"test","service":"First","carrier":"USPS","rate":"3.82","currency":"USD","retail_rate":"5.19","retail_currency":"USD","list_rate":"3.82","list_currency":"USD","delivery_days":2,"delivery_date":null,"delivery_date_guaranteed":false,"est_delivery_days":2,"shipment_id":"shp_f52a735d150741019393e514b8bcb448","carrier_account_id":"ca_mtb51Ve0"},"tracker":{"id":"trk_5633756c529046319f01390006d80deb","object":"Tracker","mode":"test","tracking_code":"9400136897846027000202","status":"unknown","status_detail":"unknown","created_at":"2019-09-10T08:21:44Z","updated_at":"2019-09-10T08:21:44Z","signed_by":null,"weight":null,"est_delivery_date":null,"shipment_id":"shp_f52a735d150741019393e514b8bcb448","carrier":"USPS","tracking_details":[],"fees":[],"carrier_detail":null,"public_url":"https://track.easypost.com/djE6dHJrXzU2MzM3NTZjNTI5MDQ2MzE5ZjAxMzkwMDA2ZDgwZGVi"},"to_address":{"id":"adr_39b51c2a57d248f5aa9006f5868ff790","object":"Address","created_at":"2019-09-10T08:21:40Z","updated_at":"2019-09-10T08:21:40Z","name":"John
+        Doe","company":"Company","street1":"A Different Road","street2":"Northwest","city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"5555550199","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"state_tax_id":null,"verifications":{}},"usps_zone":1,"return_address":{"id":"adr_b45a27fdb6374ae0998efc0f80a52fd8","object":"Address","created_at":"2019-09-10T08:21:39Z","updated_at":"2019-09-10T08:21:44Z","name":null,"company":null,"street1":"131
+        S 8th Ave","street2":null,"city":"Manville","state":"NJ","zip":"08835-1715","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":true,"federal_tax_id":null,"state_tax_id":null,"verifications":{"zip4":{"success":true,"errors":[],"details":null}}},"buyer_address":{"id":"adr_39b51c2a57d248f5aa9006f5868ff790","object":"Address","created_at":"2019-09-10T08:21:40Z","updated_at":"2019-09-10T08:21:40Z","name":"John
+        Doe","company":"Company","street1":"A Different Road","street2":"Northwest","city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"5555550199","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"state_tax_id":null,"verifications":{}},"forms":[],"fees":[{"object":"Fee","type":"LabelFee","amount":"0.01000","charged":true,"refunded":false},{"object":"Fee","type":"PostageFee","amount":"3.82000","charged":true,"refunded":false}],"id":"shp_f52a735d150741019393e514b8bcb448","object":"Shipment"}'
     http_version: 
-  recorded_at: Tue, 18 Dec 2018 15:40:26 GMT
-recorded_with: VCR 4.0.0
+  recorded_at: Tue, 10 Sep 2019 08:21:45 GMT
+recorded_with: VCR 5.0.0

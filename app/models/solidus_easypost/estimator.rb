@@ -10,7 +10,7 @@ module SolidusEasypost
 
       if rates.any?
         rates.each do |rate|
-          spree_rate = Spree::ShippingRate.new(
+          spree_rate = ::Spree::ShippingRate.new(
             name: "#{rate.carrier} #{rate.service}",
             cost: rate.rate,
             easy_post_shipment_id: rate.shipment_id,
@@ -39,12 +39,12 @@ module SolidusEasypost
     # and should not be changed in the admin.
     def find_or_create_shipping_method(rate)
       method_name = "#{rate.carrier} #{rate.service}"
-      Spree::ShippingMethod.find_or_create_by(admin_name: method_name) do |r|
+      ::Spree::ShippingMethod.find_or_create_by(admin_name: method_name) do |r|
         r.name = method_name
         r.available_to_users = false
         r.code = rate.service
-        r.calculator = Spree::Calculator::Shipping::FlatRate.create
-        r.shipping_categories = [Spree::ShippingCategory.first]
+        r.calculator = ::Spree::Calculator::Shipping::FlatRate.create
+        r.shipping_categories = [::Spree::ShippingCategory.first]
       end
     end
   end

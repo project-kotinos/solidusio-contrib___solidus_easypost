@@ -25,7 +25,7 @@ RSpec.describe Spree::Stock::Estimator, :vcr do
 
         context 'shipping methods are front end visible' do
           let(:rate_names) { ["USPS Express", "USPS First", "USPS ParcelSelect", "USPS Priority"] }
-          let(:rate_costs) { [3.07, 5.54, 6.09, 25.21] }
+          let(:rate_costs) { [3.82, 6.85, 6.95, 22.74] }
 
           it 'has the correct names' do
             names = subject.map(&:name).sort
@@ -40,12 +40,17 @@ RSpec.describe Spree::Stock::Estimator, :vcr do
 
         context 'shipping methods are not front end visible' do
           before { Spree::ShippingMethod.find_each { |x| x.update!(available_to_users: false) } }
-          it { is_expected.to be_empty }
+          it 'is empty' do
+            expect(subject).to be_empty
+          end
         end
       end
 
       context 'shipping methods dont exist' do
-        it { is_expected.to be_empty } # new shipping methods are backend only
+        # new shipping methods are backend only
+        it 'is empty' do
+          expect(subject).to be_empty
+        end
 
         it 'creates new shipping methods' do
           expect { subject }.to change { Spree::ShippingMethod.count }.by 4
@@ -62,7 +67,9 @@ RSpec.describe Spree::Stock::Estimator, :vcr do
         double(EasyPost::Shipment, rates: [])
       end
 
-      it { is_expected.to be_empty }
+      it 'is empty' do
+        expect(subject).to be_empty
+      end
 
       it 'create no new shipping methods' do
         expect { subject }.to_not change { Spree::ShippingMethod.count }

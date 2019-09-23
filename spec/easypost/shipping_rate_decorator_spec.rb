@@ -8,6 +8,9 @@ RSpec.describe Spree::ShippingRate, :vcr do
 
   describe '#name' do
     subject { rate.name }
-    it { is_expected.to eq name }
+
+    it 'has the right name' do
+      expect(subject).to eq(name)
+    end
   end
 end

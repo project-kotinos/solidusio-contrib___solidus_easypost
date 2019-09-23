@@ -4,370 +4,400 @@ http_interactions:
     method: post
     uri: https://api.easypost.com/v2/addresses
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: address[street1]=200%2019th%20St&address[city]=Birmingham&address[zip]=35203&address[phone]=123456789&address[name]=Newt%20Scamander&address[state]=AL&address[country]=US
     headers:
       Accept:
-      - "*/*; q=0.5, application/xml"
-      Accept-Encoding:
-      - gzip, deflate
+      - "*/*"
       User-Agent:
-      - EasyPost/v2 RubyClient/2.1.9
+      - EasyPost/v2 RubyClient/3.0.1
       Authorization:
       - Bearer CvzYtuda6KRI9JjG7SAHbA
       Content-Type:
       - application/x-www-form-urlencoded
       Content-Length:
       - '170'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.easypost.com
   response:
     status:
       code: 201
       message: Created
     headers:
-      Date:
-      - Wed, 02 Dec 2015 21:34:18 GMT
-      Status:
-      - 201 Created
-      Connection:
-      - close
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
+      X-Ep-Request-Uuid:
+      - d9da60c35d775f24ee82e4c90000639d
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, private
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
       Location:
-      - "/api/v2/addresses/adr_544d603cba11461090b7a2bd116a8a30"
+      - "/api/v2/addresses/adr_ce288f2d8aef4cb2a6d7590db60bfd3c"
       Content-Type:
       - application/json; charset=utf-8
-      Etag:
-      - W/"2c298b6757d734fcb8d04a99b503980b"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - c26b5bed-2ad2-4ada-bb32-b29ff1c4491f
       X-Runtime:
-      - '0.079376'
+      - '0.038653'
+      Transfer-Encoding:
+      - chunked
       X-Node:
-      - web14sj, 6427aa0e60
+      - bigweb8sj
+      X-Version-Label:
+      - easypost-201909091924-20b1629d24-master
       X-Backend:
       - easypost
       X-Proxied:
-      - lb5sj, 6568750064
+      - extlb2wdc ff5a2958df
+      - intlb1sj ff5a2958df
+      - intlb2wdc ff5a2958df
       Strict-Transport-Security:
-      - max-age=86400
+      - max-age=15768000; includeSubDomains; preload
     body:
-      encoding: UTF-8
-      string: '{"id":"adr_544d603cba11461090b7a2bd116a8a30","object":"Address","created_at":"2015-12-02T21:34:18Z","updated_at":"2015-12-02T21:34:18Z","name":"Newt
-        Scamander","company":null,"street1":"200 19th St","street2":null,"city":"Birmingham","state":"AL","zip":"35203","country":"US","phone":"123456789","email":null,"mode":"test","carrier_facility":null,"residential":false,"federal_tax_id":null}'
+      encoding: ASCII-8BIT
+      string: '{"id":"adr_ce288f2d8aef4cb2a6d7590db60bfd3c","object":"Address","created_at":"2019-09-10T08:30:28Z","updated_at":"2019-09-10T08:30:28Z","name":"Newt
+        Scamander","company":null,"street1":"200 19th St","street2":null,"city":"Birmingham","state":"AL","zip":"35203","country":"US","phone":"123456789","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"state_tax_id":null,"verifications":{}}'
     http_version: 
-  recorded_at: Wed, 02 Dec 2015 21:34:20 GMT
+  recorded_at: Tue, 10 Sep 2019 08:30:28 GMT
 - request:
     method: post
     uri: https://api.easypost.com/v2/addresses
     body:
-      encoding: US-ASCII
-      string: address[street1]=2630%20Cahaba%20Rd&address[city]=Birmingham&address[zip]=35223&address[phone]=(202)%20456-1111&address[company]=Spree%20Test%20Store%2021&address[state]=AL&address[country]=US
+      encoding: UTF-8
+      string: address[street1]=2630%20Cahaba%20Rd&address[city]=Birmingham&address[zip]=35223&address[phone]=(202)%20456-1111&address[state]=AL&address[country]=US
     headers:
       Accept:
-      - "*/*; q=0.5, application/xml"
-      Accept-Encoding:
-      - gzip, deflate
+      - "*/*"
       User-Agent:
-      - EasyPost/v2 RubyClient/2.1.9
+      - EasyPost/v2 RubyClient/3.0.1
       Authorization:
       - Bearer CvzYtuda6KRI9JjG7SAHbA
       Content-Type:
       - application/x-www-form-urlencoded
       Content-Length:
-      - '192'
+      - '149'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.easypost.com
   response:
     status:
       code: 201
       message: Created
     headers:
-      Date:
-      - Wed, 02 Dec 2015 21:34:19 GMT
-      Status:
-      - 201 Created
-      Connection:
-      - close
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
+      X-Ep-Request-Uuid:
+      - d9da60c35d775f25ee82e92f000063bc
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, private
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
       Location:
-      - "/api/v2/addresses/adr_7f2b0a54c4664c8a985930f87e87e203"
+      - "/api/v2/addresses/adr_3ce8949deecd405e800cfb69326a60d1"
       Content-Type:
       - application/json; charset=utf-8
-      Etag:
-      - W/"c4670f7eb13ffbca9806fb3ce35b681a"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 20cc7015-fb27-4f7e-9d97-569ec2281b90
       X-Runtime:
-      - '0.036455'
+      - '0.097390'
+      Transfer-Encoding:
+      - chunked
       X-Node:
-      - web3sj, e2304ceaff
+      - bigweb3sj
+      X-Version-Label:
+      - easypost-201909091924-20b1629d24-master
       X-Backend:
       - easypost
       X-Proxied:
-      - lb5sj, 6568750064
+      - extlb2wdc ff5a2958df
+      - intlb1sj ff5a2958df
+      - intlb1wdc ff5a2958df
       Strict-Transport-Security:
-      - max-age=86400
+      - max-age=15768000; includeSubDomains; preload
     body:
-      encoding: UTF-8
-      string: '{"id":"adr_7f2b0a54c4664c8a985930f87e87e203","object":"Address","created_at":"2015-12-02T21:34:19Z","updated_at":"2015-12-02T21:34:19Z","name":null,"company":"Spree
-        Test Store 21","street1":"2630 Cahaba Rd","street2":null,"city":"Birmingham","state":"AL","zip":"35223","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":false,"federal_tax_id":null}'
+      encoding: ASCII-8BIT
+      string: '{"id":"adr_3ce8949deecd405e800cfb69326a60d1","object":"Address","created_at":"2019-09-10T08:30:29Z","updated_at":"2019-09-10T08:30:29Z","name":null,"company":null,"street1":"2630
+        Cahaba Rd","street2":null,"city":"Birmingham","state":"AL","zip":"35223","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"state_tax_id":null,"verifications":{}}'
     http_version: 
-  recorded_at: Wed, 02 Dec 2015 21:34:21 GMT
+  recorded_at: Tue, 10 Sep 2019 08:30:29 GMT
 - request:
     method: post
     uri: https://api.easypost.com/v2/parcels
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: parcel[weight]=20.0
     headers:
       Accept:
-      - "*/*; q=0.5, application/xml"
-      Accept-Encoding:
-      - gzip, deflate
+      - "*/*"
       User-Agent:
-      - EasyPost/v2 RubyClient/2.1.9
+      - EasyPost/v2 RubyClient/3.0.1
       Authorization:
       - Bearer CvzYtuda6KRI9JjG7SAHbA
       Content-Type:
       - application/x-www-form-urlencoded
       Content-Length:
       - '19'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.easypost.com
   response:
     status:
       code: 201
       message: Created
     headers:
-      Date:
-      - Wed, 02 Dec 2015 21:34:19 GMT
-      Status:
-      - 201 Created
-      Connection:
-      - close
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
+      X-Ep-Request-Uuid:
+      - d9da60c35d775f26ee813bed000063eb
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, private
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
       Location:
-      - "/api/v2/parcels/prcl_6c662e0c441a4fd692f71b0723a5de43"
+      - "/api/v2/parcels/prcl_11c1ac0da9f54cdf824ddba34842c69c"
       Content-Type:
       - application/json; charset=utf-8
-      Etag:
-      - W/"fbc515d5b70d6fb472b65bcef3047354"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 86f6a062-89dc-4676-b165-6cb169824536
       X-Runtime:
-      - '0.018308'
+      - '0.068208'
+      Transfer-Encoding:
+      - chunked
       X-Node:
-      - web10sj, c3ab94a7a6
+      - bigweb4sj
+      X-Version-Label:
+      - easypost-201909091924-20b1629d24-master
       X-Backend:
       - easypost
       X-Proxied:
-      - lb5sj, 6568750064
+      - extlb2wdc ff5a2958df
+      - intlb1sj ff5a2958df
+      - intlb2wdc ff5a2958df
       Strict-Transport-Security:
-      - max-age=86400
+      - max-age=15768000; includeSubDomains; preload
     body:
-      encoding: UTF-8
-      string: '{"id":"prcl_6c662e0c441a4fd692f71b0723a5de43","object":"Parcel","created_at":"2015-12-02T21:34:19Z","updated_at":"2015-12-02T21:34:19Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":20.0,"mode":"test"}'
+      encoding: ASCII-8BIT
+      string: '{"id":"prcl_11c1ac0da9f54cdf824ddba34842c69c","object":"Parcel","created_at":"2019-09-10T08:30:30Z","updated_at":"2019-09-10T08:30:30Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":20.0,"mode":"test"}'
     http_version: 
-  recorded_at: Wed, 02 Dec 2015 21:34:21 GMT
+  recorded_at: Tue, 10 Sep 2019 08:30:30 GMT
 - request:
     method: post
     uri: https://api.easypost.com/v2/shipments
     body:
-      encoding: US-ASCII
-      string: shipment[to_address][id]=adr_544d603cba11461090b7a2bd116a8a30&shipment[from_address][id]=adr_7f2b0a54c4664c8a985930f87e87e203&shipment[parcel][id]=prcl_6c662e0c441a4fd692f71b0723a5de43
+      encoding: UTF-8
+      string: shipment[to_address][id]=adr_ce288f2d8aef4cb2a6d7590db60bfd3c&shipment[from_address][id]=adr_3ce8949deecd405e800cfb69326a60d1&shipment[parcel][id]=prcl_11c1ac0da9f54cdf824ddba34842c69c
     headers:
       Accept:
-      - "*/*; q=0.5, application/xml"
-      Accept-Encoding:
-      - gzip, deflate
+      - "*/*"
       User-Agent:
-      - EasyPost/v2 RubyClient/2.1.9
+      - EasyPost/v2 RubyClient/3.0.1
       Authorization:
       - Bearer CvzYtuda6KRI9JjG7SAHbA
       Content-Type:
       - application/x-www-form-urlencoded
       Content-Length:
       - '184'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.easypost.com
   response:
     status:
       code: 201
       message: Created
     headers:
-      Date:
-      - Wed, 02 Dec 2015 21:34:20 GMT
-      Status:
-      - 201 Created
-      Connection:
-      - close
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
+      X-Ep-Request-Uuid:
+      - d9da60c35d775f26ee716a0f0000640d
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, private
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
       Location:
-      - "/account/shipments/shp_51d5cc7295884ab88063663dbfffe1f8"
+      - "/api/v2/shipments/shp_b0ef3e43ec23460483d972c58cab5fa3"
       Content-Type:
       - application/json; charset=utf-8
-      Etag:
-      - W/"a232bfe8b9d91cb433a392cde69a004d"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 9c718e00-ef89-4663-9126-34f8791ef29e
       X-Runtime:
-      - '0.774200'
+      - '0.229085'
+      Transfer-Encoding:
+      - chunked
       X-Node:
-      - web3sj, e2304ceaff
+      - bigweb9sj
+      X-Version-Label:
+      - easypost-201909091924-20b1629d24-master
       X-Backend:
       - easypost
       X-Proxied:
-      - lb5sj, 6568750064
+      - extlb2wdc ff5a2958df
+      - intlb1sj ff5a2958df
+      - intlb2wdc ff5a2958df
       Strict-Transport-Security:
-      - max-age=86400
+      - max-age=15768000; includeSubDomains; preload
     body:
-      encoding: UTF-8
-      string: '{"created_at":"2015-12-02T21:34:19Z","is_return":false,"messages":[],"mode":"test","options":{"currency":"USD","label_date":null},"reference":null,"status":"unknown","tracking_code":null,"updated_at":"2015-12-02T21:34:19Z","batch_id":null,"batch_status":null,"batch_message":null,"customs_info":null,"from_address":{"id":"adr_7f2b0a54c4664c8a985930f87e87e203","object":"Address","created_at":"2015-12-02T21:34:19Z","updated_at":"2015-12-02T21:34:19Z","name":null,"company":"Spree
-        Test Store 21","street1":"2630 Cahaba Rd","street2":null,"city":"Birmingham","state":"AL","zip":"35223","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":false,"federal_tax_id":null},"insurance":null,"parcel":{"id":"prcl_6c662e0c441a4fd692f71b0723a5de43","object":"Parcel","created_at":"2015-12-02T21:34:19Z","updated_at":"2015-12-02T21:34:19Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":20.0,"mode":"test"},"postage_label":null,"rates":[{"id":"rate_2e6265294e734da991ffbb492cc512ad","object":"Rate","created_at":"2015-12-02T21:34:20Z","updated_at":"2015-12-02T21:34:20Z","mode":"test","service":"ParcelSelect","carrier":"USPS","rate":"5.90","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.90","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_51d5cc7295884ab88063663dbfffe1f8","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_07617a03a69d48a792e05ea64c41919c","object":"Rate","created_at":"2015-12-02T21:34:20Z","updated_at":"2015-12-02T21:34:20Z","mode":"test","service":"Priority","carrier":"USPS","rate":"5.32","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.32","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_51d5cc7295884ab88063663dbfffe1f8","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_a3254bc599bd4a909e8602db0abeacf1","object":"Rate","created_at":"2015-12-02T21:34:20Z","updated_at":"2015-12-02T21:34:20Z","mode":"test","service":"Express","carrier":"USPS","rate":"15.58","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"15.58","list_currency":"USD","delivery_days":1,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":1,"shipment_id":"shp_51d5cc7295884ab88063663dbfffe1f8","carrier_account_id":"ca_mtb51Ve0"}],"refund_status":null,"scan_form":null,"selected_rate":null,"tracker":null,"to_address":{"id":"adr_544d603cba11461090b7a2bd116a8a30","object":"Address","created_at":"2015-12-02T21:34:18Z","updated_at":"2015-12-02T21:34:18Z","name":"Newt
-        Scamander","company":null,"street1":"200 19th St","street2":null,"city":"Birmingham","state":"AL","zip":"35203","country":"US","phone":"123456789","email":null,"mode":"test","carrier_facility":null,"residential":false,"federal_tax_id":null},"usps_zone":1,"return_address":{"id":"adr_7f2b0a54c4664c8a985930f87e87e203","object":"Address","created_at":"2015-12-02T21:34:19Z","updated_at":"2015-12-02T21:34:19Z","name":null,"company":"Spree
-        Test Store 21","street1":"2630 Cahaba Rd","street2":null,"city":"Birmingham","state":"AL","zip":"35223","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":false,"federal_tax_id":null},"buyer_address":{"id":"adr_544d603cba11461090b7a2bd116a8a30","object":"Address","created_at":"2015-12-02T21:34:18Z","updated_at":"2015-12-02T21:34:18Z","name":"Newt
-        Scamander","company":null,"street1":"200 19th St","street2":null,"city":"Birmingham","state":"AL","zip":"35203","country":"US","phone":"123456789","email":null,"mode":"test","carrier_facility":null,"residential":false,"federal_tax_id":null},"forms":[],"fees":[],"id":"shp_51d5cc7295884ab88063663dbfffe1f8","object":"Shipment"}'
+      encoding: ASCII-8BIT
+      string: '{"created_at":"2019-09-10T08:30:31Z","is_return":false,"messages":[],"mode":"test","options":{"currency":"USD","payment":{"type":"SENDER"},"label_date":null,"date_advance":0},"reference":null,"status":"unknown","tracking_code":null,"updated_at":"2019-09-10T08:30:31Z","batch_id":null,"batch_status":null,"batch_message":null,"customs_info":null,"from_address":{"id":"adr_3ce8949deecd405e800cfb69326a60d1","object":"Address","created_at":"2019-09-10T08:30:29Z","updated_at":"2019-09-10T08:30:29Z","name":null,"company":null,"street1":"2630
+        Cahaba Rd","street2":null,"city":"Birmingham","state":"AL","zip":"35223","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"state_tax_id":null,"verifications":{}},"insurance":null,"order_id":null,"parcel":{"id":"prcl_11c1ac0da9f54cdf824ddba34842c69c","object":"Parcel","created_at":"2019-09-10T08:30:30Z","updated_at":"2019-09-10T08:30:30Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":20.0,"mode":"test"},"postage_label":null,"rates":[{"id":"rate_6a821b1cde184e6caabb5b04d37dd4bd","object":"Rate","created_at":"2019-09-10T08:30:31Z","updated_at":"2019-09-10T08:30:31Z","mode":"test","service":"ParcelSelect","carrier":"USPS","rate":"7.32","currency":"USD","retail_rate":"7.32","retail_currency":"USD","list_rate":"7.32","list_currency":"USD","delivery_days":2,"delivery_date":null,"delivery_date_guaranteed":false,"est_delivery_days":2,"shipment_id":"shp_b0ef3e43ec23460483d972c58cab5fa3","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_09efa6abc8f04c09a0e5b6e405e5774b","object":"Rate","created_at":"2019-09-10T08:30:31Z","updated_at":"2019-09-10T08:30:31Z","mode":"test","service":"Express","carrier":"USPS","rate":"22.78","currency":"USD","retail_rate":"25.70","retail_currency":"USD","list_rate":"22.78","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":false,"est_delivery_days":null,"shipment_id":"shp_b0ef3e43ec23460483d972c58cab5fa3","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_8d515e480d8a4d5b89f31211a8504778","object":"Rate","created_at":"2019-09-10T08:30:31Z","updated_at":"2019-09-10T08:30:31Z","mode":"test","service":"Priority","carrier":"USPS","rate":"7.42","currency":"USD","retail_rate":"7.85","retail_currency":"USD","list_rate":"7.42","list_currency":"USD","delivery_days":1,"delivery_date":null,"delivery_date_guaranteed":false,"est_delivery_days":1,"shipment_id":"shp_b0ef3e43ec23460483d972c58cab5fa3","carrier_account_id":"ca_mtb51Ve0"}],"refund_status":null,"scan_form":null,"selected_rate":null,"tracker":null,"to_address":{"id":"adr_ce288f2d8aef4cb2a6d7590db60bfd3c","object":"Address","created_at":"2019-09-10T08:30:28Z","updated_at":"2019-09-10T08:30:28Z","name":"Newt
+        Scamander","company":null,"street1":"200 19th St","street2":null,"city":"Birmingham","state":"AL","zip":"35203","country":"US","phone":"123456789","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"state_tax_id":null,"verifications":{}},"usps_zone":1,"return_address":{"id":"adr_3ce8949deecd405e800cfb69326a60d1","object":"Address","created_at":"2019-09-10T08:30:29Z","updated_at":"2019-09-10T08:30:29Z","name":null,"company":null,"street1":"2630
+        Cahaba Rd","street2":null,"city":"Birmingham","state":"AL","zip":"35223","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"state_tax_id":null,"verifications":{}},"buyer_address":{"id":"adr_ce288f2d8aef4cb2a6d7590db60bfd3c","object":"Address","created_at":"2019-09-10T08:30:28Z","updated_at":"2019-09-10T08:30:28Z","name":"Newt
+        Scamander","company":null,"street1":"200 19th St","street2":null,"city":"Birmingham","state":"AL","zip":"35203","country":"US","phone":"123456789","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"state_tax_id":null,"verifications":{}},"forms":[],"fees":[],"id":"shp_b0ef3e43ec23460483d972c58cab5fa3","object":"Shipment"}'
     http_version: 
-  recorded_at: Wed, 02 Dec 2015 21:34:22 GMT
+  recorded_at: Tue, 10 Sep 2019 08:30:31 GMT
 - request:
     method: get
-    uri: https://api.easypost.com/v2/shipments/shp_51d5cc7295884ab88063663dbfffe1f8
+    uri: https://api.easypost.com/v2/shipments/shp_b0ef3e43ec23460483d972c58cab5fa3
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Accept:
-      - "*/*; q=0.5, application/xml"
-      Accept-Encoding:
-      - gzip, deflate
+      - "*/*"
       User-Agent:
-      - EasyPost/v2 RubyClient/2.1.9
+      - EasyPost/v2 RubyClient/3.0.1
       Authorization:
       - Bearer CvzYtuda6KRI9JjG7SAHbA
       Content-Type:
       - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.easypost.com
   response:
     status:
       code: 200
       message: OK
     headers:
-      Date:
-      - Wed, 02 Dec 2015 21:34:20 GMT
-      Status:
-      - 200 OK
-      Connection:
-      - close
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
+      X-Ep-Request-Uuid:
+      - d9da60c35d775f28ee8247640000644a
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, private
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
       Content-Type:
       - application/json; charset=utf-8
-      Etag:
-      - W/"a232bfe8b9d91cb433a392cde69a004d"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 29fa7536-4026-4c51-bf0c-33ef496047be
       X-Runtime:
-      - '0.071603'
+      - '0.069760'
+      Transfer-Encoding:
+      - chunked
       X-Node:
-      - web6sj, e2304ceaff
+      - bigweb7sj
+      X-Version-Label:
+      - easypost-201909091924-20b1629d24-master
       X-Backend:
       - easypost
+      X-Canary:
+      - direct
       X-Proxied:
-      - lb5sj, 6568750064
+      - extlb2wdc ff5a2958df
+      - intlb1sj ff5a2958df
+      - intlb2wdc ff5a2958df
       Strict-Transport-Security:
-      - max-age=86400
+      - max-age=15768000; includeSubDomains; preload
     body:
-      encoding: UTF-8
-      string: '{"created_at":"2015-12-02T21:34:19Z","is_return":false,"messages":[],"mode":"test","options":{"currency":"USD","label_date":null},"reference":null,"status":"unknown","tracking_code":null,"updated_at":"2015-12-02T21:34:19Z","batch_id":null,"batch_status":null,"batch_message":null,"customs_info":null,"from_address":{"id":"adr_7f2b0a54c4664c8a985930f87e87e203","object":"Address","created_at":"2015-12-02T21:34:19Z","updated_at":"2015-12-02T21:34:19Z","name":null,"company":"Spree
-        Test Store 21","street1":"2630 Cahaba Rd","street2":null,"city":"Birmingham","state":"AL","zip":"35223","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":false,"federal_tax_id":null},"insurance":null,"parcel":{"id":"prcl_6c662e0c441a4fd692f71b0723a5de43","object":"Parcel","created_at":"2015-12-02T21:34:19Z","updated_at":"2015-12-02T21:34:19Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":20.0,"mode":"test"},"postage_label":null,"rates":[{"id":"rate_2e6265294e734da991ffbb492cc512ad","object":"Rate","created_at":"2015-12-02T21:34:20Z","updated_at":"2015-12-02T21:34:20Z","mode":"test","service":"ParcelSelect","carrier":"USPS","rate":"5.90","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.90","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_51d5cc7295884ab88063663dbfffe1f8","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_07617a03a69d48a792e05ea64c41919c","object":"Rate","created_at":"2015-12-02T21:34:20Z","updated_at":"2015-12-02T21:34:20Z","mode":"test","service":"Priority","carrier":"USPS","rate":"5.32","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.32","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_51d5cc7295884ab88063663dbfffe1f8","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_a3254bc599bd4a909e8602db0abeacf1","object":"Rate","created_at":"2015-12-02T21:34:20Z","updated_at":"2015-12-02T21:34:20Z","mode":"test","service":"Express","carrier":"USPS","rate":"15.58","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"15.58","list_currency":"USD","delivery_days":1,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":1,"shipment_id":"shp_51d5cc7295884ab88063663dbfffe1f8","carrier_account_id":"ca_mtb51Ve0"}],"refund_status":null,"scan_form":null,"selected_rate":null,"tracker":null,"to_address":{"id":"adr_544d603cba11461090b7a2bd116a8a30","object":"Address","created_at":"2015-12-02T21:34:18Z","updated_at":"2015-12-02T21:34:18Z","name":"Newt
-        Scamander","company":null,"street1":"200 19th St","street2":null,"city":"Birmingham","state":"AL","zip":"35203","country":"US","phone":"123456789","email":null,"mode":"test","carrier_facility":null,"residential":false,"federal_tax_id":null},"usps_zone":1,"return_address":{"id":"adr_7f2b0a54c4664c8a985930f87e87e203","object":"Address","created_at":"2015-12-02T21:34:19Z","updated_at":"2015-12-02T21:34:19Z","name":null,"company":"Spree
-        Test Store 21","street1":"2630 Cahaba Rd","street2":null,"city":"Birmingham","state":"AL","zip":"35223","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":false,"federal_tax_id":null},"buyer_address":{"id":"adr_544d603cba11461090b7a2bd116a8a30","object":"Address","created_at":"2015-12-02T21:34:18Z","updated_at":"2015-12-02T21:34:18Z","name":"Newt
-        Scamander","company":null,"street1":"200 19th St","street2":null,"city":"Birmingham","state":"AL","zip":"35203","country":"US","phone":"123456789","email":null,"mode":"test","carrier_facility":null,"residential":false,"federal_tax_id":null},"forms":[],"fees":[],"id":"shp_51d5cc7295884ab88063663dbfffe1f8","object":"Shipment"}'
+      encoding: ASCII-8BIT
+      string: '{"created_at":"2019-09-10T08:30:31Z","is_return":false,"messages":[],"mode":"test","options":{"currency":"USD","payment":{"type":"SENDER"},"label_date":null,"date_advance":0},"reference":null,"status":"unknown","tracking_code":null,"updated_at":"2019-09-10T08:30:31Z","batch_id":null,"batch_status":null,"batch_message":null,"customs_info":null,"from_address":{"id":"adr_3ce8949deecd405e800cfb69326a60d1","object":"Address","created_at":"2019-09-10T08:30:29Z","updated_at":"2019-09-10T08:30:29Z","name":null,"company":null,"street1":"2630
+        Cahaba Rd","street2":null,"city":"Birmingham","state":"AL","zip":"35223","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"state_tax_id":null,"verifications":{}},"insurance":null,"order_id":null,"parcel":{"id":"prcl_11c1ac0da9f54cdf824ddba34842c69c","object":"Parcel","created_at":"2019-09-10T08:30:30Z","updated_at":"2019-09-10T08:30:30Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":20.0,"mode":"test"},"postage_label":null,"rates":[{"id":"rate_6a821b1cde184e6caabb5b04d37dd4bd","object":"Rate","created_at":"2019-09-10T08:30:31Z","updated_at":"2019-09-10T08:30:31Z","mode":"test","service":"ParcelSelect","carrier":"USPS","rate":"7.32","currency":"USD","retail_rate":"7.32","retail_currency":"USD","list_rate":"7.32","list_currency":"USD","delivery_days":2,"delivery_date":null,"delivery_date_guaranteed":false,"est_delivery_days":2,"shipment_id":"shp_b0ef3e43ec23460483d972c58cab5fa3","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_09efa6abc8f04c09a0e5b6e405e5774b","object":"Rate","created_at":"2019-09-10T08:30:31Z","updated_at":"2019-09-10T08:30:31Z","mode":"test","service":"Express","carrier":"USPS","rate":"22.78","currency":"USD","retail_rate":"25.70","retail_currency":"USD","list_rate":"22.78","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":false,"est_delivery_days":null,"shipment_id":"shp_b0ef3e43ec23460483d972c58cab5fa3","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_8d515e480d8a4d5b89f31211a8504778","object":"Rate","created_at":"2019-09-10T08:30:31Z","updated_at":"2019-09-10T08:30:31Z","mode":"test","service":"Priority","carrier":"USPS","rate":"7.42","currency":"USD","retail_rate":"7.85","retail_currency":"USD","list_rate":"7.42","list_currency":"USD","delivery_days":1,"delivery_date":null,"delivery_date_guaranteed":false,"est_delivery_days":1,"shipment_id":"shp_b0ef3e43ec23460483d972c58cab5fa3","carrier_account_id":"ca_mtb51Ve0"}],"refund_status":null,"scan_form":null,"selected_rate":null,"tracker":null,"to_address":{"id":"adr_ce288f2d8aef4cb2a6d7590db60bfd3c","object":"Address","created_at":"2019-09-10T08:30:28Z","updated_at":"2019-09-10T08:30:28Z","name":"Newt
+        Scamander","company":null,"street1":"200 19th St","street2":null,"city":"Birmingham","state":"AL","zip":"35203","country":"US","phone":"123456789","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"state_tax_id":null,"verifications":{}},"usps_zone":1,"return_address":{"id":"adr_3ce8949deecd405e800cfb69326a60d1","object":"Address","created_at":"2019-09-10T08:30:29Z","updated_at":"2019-09-10T08:30:29Z","name":null,"company":null,"street1":"2630
+        Cahaba Rd","street2":null,"city":"Birmingham","state":"AL","zip":"35223","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"state_tax_id":null,"verifications":{}},"buyer_address":{"id":"adr_ce288f2d8aef4cb2a6d7590db60bfd3c","object":"Address","created_at":"2019-09-10T08:30:28Z","updated_at":"2019-09-10T08:30:28Z","name":"Newt
+        Scamander","company":null,"street1":"200 19th St","street2":null,"city":"Birmingham","state":"AL","zip":"35203","country":"US","phone":"123456789","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"state_tax_id":null,"verifications":{}},"forms":[],"fees":[],"id":"shp_b0ef3e43ec23460483d972c58cab5fa3","object":"Shipment"}'
     http_version: 
-  recorded_at: Wed, 02 Dec 2015 21:34:22 GMT
+  recorded_at: Tue, 10 Sep 2019 08:30:32 GMT
 - request:
     method: post
-    uri: https://api.easypost.com/v2/shipments/shp_51d5cc7295884ab88063663dbfffe1f8/buy
+    uri: https://api.easypost.com/v2/shipments/shp_b0ef3e43ec23460483d972c58cab5fa3/buy
     body:
-      encoding: US-ASCII
-      string: rate[id]=rate_07617a03a69d48a792e05ea64c41919c
+      encoding: UTF-8
+      string: rate[id]=rate_6a821b1cde184e6caabb5b04d37dd4bd
     headers:
       Accept:
-      - "*/*; q=0.5, application/xml"
-      Accept-Encoding:
-      - gzip, deflate
+      - "*/*"
       User-Agent:
-      - EasyPost/v2 RubyClient/2.1.9
+      - EasyPost/v2 RubyClient/3.0.1
       Authorization:
       - Bearer CvzYtuda6KRI9JjG7SAHbA
       Content-Type:
       - application/x-www-form-urlencoded
       Content-Length:
       - '46'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.easypost.com
   response:
     status:
       code: 200
       message: OK
     headers:
-      Date:
-      - Wed, 02 Dec 2015 21:34:22 GMT
-      Status:
-      - 200 OK
-      Connection:
-      - close
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
+      X-Ep-Request-Uuid:
+      - d9da60c35d775f28ee80c48f0000646f
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, private
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
       Content-Type:
       - application/json; charset=utf-8
-      Etag:
-      - W/"ded3ce0f0935aabac1c4c6688d54848d"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 1710bffe-e302-4405-8cfa-e30c7b5d20fe
       X-Runtime:
-      - '1.356717'
+      - '1.127286'
+      Transfer-Encoding:
+      - chunked
       X-Node:
-      - web15sj, e2304ceaff
+      - bigweb3sj
+      X-Version-Label:
+      - easypost-201909091924-20b1629d24-master
       X-Backend:
       - easypost
       X-Proxied:
-      - lb5sj, 6568750064
+      - extlb2wdc ff5a2958df
+      - intlb1wdc ff5a2958df
+      - intlb2sj ff5a2958df
       Strict-Transport-Security:
-      - max-age=86400
+      - max-age=15768000; includeSubDomains; preload
     body:
-      encoding: UTF-8
-      string: '{"postage_label":{"id":"pl_d5b589dffcb44668ad55a8f709bc44d8","object":"PostageLabel","created_at":"2015-12-02T21:34:21Z","updated_at":"2015-12-02T21:34:21Z","date_advance":0,"integrated_form":"none","label_date":"2015-12-02T21:34:19Z","label_resolution":300,"label_size":"4x6","label_type":"default","label_url":"http://assets.geteasypost.com/postage_labels/labels/20151202/e8a4d25d908843a2a4bd3497b5bbb23d.png","label_file_type":"image/png","label_pdf_url":null,"label_epl2_url":null,"label_zpl_url":null},"tracking_code":"9499907123456123456781","tracker":{"id":"trk_bec01fba18684e09b05831e543f07e61","object":"Tracker","mode":"test","tracking_code":"9499907123456123456781","status":"unknown","created_at":"2015-12-02T21:34:22Z","updated_at":"2015-12-02T21:34:22Z","signed_by":null,"weight":null,"est_delivery_date":null,"shipment_id":"shp_51d5cc7295884ab88063663dbfffe1f8","carrier":"USPS","tracking_details":[],"fees":[],"carrier_detail":null},"insurance":null,"selected_rate":{"id":"rate_07617a03a69d48a792e05ea64c41919c","object":"Rate","created_at":"2015-12-02T21:34:20Z","updated_at":"2015-12-02T21:34:20Z","mode":"test","service":"Priority","carrier":"USPS","rate":"5.32","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.32","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_51d5cc7295884ab88063663dbfffe1f8","carrier_account_id":"ca_mtb51Ve0"},"forms":[],"messages":[],"fees":[{"object":"Fee","type":"LabelFee","amount":"0.05000","charged":false,"refunded":false},{"object":"Fee","type":"PostageFee","amount":"5.32000","charged":false,"refunded":false}]}'
+      encoding: ASCII-8BIT
+      string: '{"created_at":"2019-09-10T08:30:31Z","is_return":false,"messages":[],"mode":"test","options":{"currency":"USD","payment":{"type":"SENDER"},"label_date":null,"date_advance":0},"reference":null,"status":"unknown","tracking_code":"9461236897846027000552","updated_at":"2019-09-10T08:30:33Z","batch_id":null,"batch_status":null,"batch_message":null,"customs_info":null,"from_address":{"id":"adr_3ce8949deecd405e800cfb69326a60d1","object":"Address","created_at":"2019-09-10T08:30:29Z","updated_at":"2019-09-10T08:30:29Z","name":null,"company":null,"street1":"2630
+        Cahaba Rd","street2":null,"city":"Birmingham","state":"AL","zip":"35223","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"state_tax_id":null,"verifications":{}},"insurance":null,"order_id":null,"parcel":{"id":"prcl_11c1ac0da9f54cdf824ddba34842c69c","object":"Parcel","created_at":"2019-09-10T08:30:30Z","updated_at":"2019-09-10T08:30:30Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":20.0,"mode":"test"},"postage_label":{"object":"PostageLabel","id":"pl_ff6035dffdd54a81921020fbd06f5667","created_at":"2019-09-10T08:30:33Z","updated_at":"2019-09-10T08:30:33Z","date_advance":0,"integrated_form":"none","label_date":"2019-09-10T08:30:33Z","label_resolution":300,"label_size":"4x6","label_type":"default","label_file_type":"image/png","label_url":"https://easypost-files.s3-us-west-2.amazonaws.com/files/postage_label/20190910/7882ad3bc4d34dbba93041c912cb734a.png","label_pdf_url":null,"label_zpl_url":null,"label_epl2_url":null,"label_file":null},"rates":[{"id":"rate_6a821b1cde184e6caabb5b04d37dd4bd","object":"Rate","created_at":"2019-09-10T08:30:31Z","updated_at":"2019-09-10T08:30:31Z","mode":"test","service":"ParcelSelect","carrier":"USPS","rate":"7.32","currency":"USD","retail_rate":"7.32","retail_currency":"USD","list_rate":"7.32","list_currency":"USD","delivery_days":2,"delivery_date":null,"delivery_date_guaranteed":false,"est_delivery_days":2,"shipment_id":"shp_b0ef3e43ec23460483d972c58cab5fa3","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_09efa6abc8f04c09a0e5b6e405e5774b","object":"Rate","created_at":"2019-09-10T08:30:31Z","updated_at":"2019-09-10T08:30:31Z","mode":"test","service":"Express","carrier":"USPS","rate":"22.78","currency":"USD","retail_rate":"25.70","retail_currency":"USD","list_rate":"22.78","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":false,"est_delivery_days":null,"shipment_id":"shp_b0ef3e43ec23460483d972c58cab5fa3","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_8d515e480d8a4d5b89f31211a8504778","object":"Rate","created_at":"2019-09-10T08:30:31Z","updated_at":"2019-09-10T08:30:31Z","mode":"test","service":"Priority","carrier":"USPS","rate":"7.42","currency":"USD","retail_rate":"7.85","retail_currency":"USD","list_rate":"7.42","list_currency":"USD","delivery_days":1,"delivery_date":null,"delivery_date_guaranteed":false,"est_delivery_days":1,"shipment_id":"shp_b0ef3e43ec23460483d972c58cab5fa3","carrier_account_id":"ca_mtb51Ve0"}],"refund_status":null,"scan_form":null,"selected_rate":{"id":"rate_6a821b1cde184e6caabb5b04d37dd4bd","object":"Rate","created_at":"2019-09-10T08:30:31Z","updated_at":"2019-09-10T08:30:31Z","mode":"test","service":"ParcelSelect","carrier":"USPS","rate":"7.32","currency":"USD","retail_rate":"7.32","retail_currency":"USD","list_rate":"7.32","list_currency":"USD","delivery_days":2,"delivery_date":null,"delivery_date_guaranteed":false,"est_delivery_days":2,"shipment_id":"shp_b0ef3e43ec23460483d972c58cab5fa3","carrier_account_id":"ca_mtb51Ve0"},"tracker":{"id":"trk_876ad8ee776842788af4318ebf534222","object":"Tracker","mode":"test","tracking_code":"9461236897846027000552","status":"unknown","status_detail":"unknown","created_at":"2019-09-10T08:30:33Z","updated_at":"2019-09-10T08:30:33Z","signed_by":null,"weight":null,"est_delivery_date":null,"shipment_id":"shp_b0ef3e43ec23460483d972c58cab5fa3","carrier":"USPS","tracking_details":[],"fees":[],"carrier_detail":null,"public_url":"https://track.easypost.com/djE6dHJrXzg3NmFkOGVlNzc2ODQyNzg4YWY0MzE4ZWJmNTM0MjIy"},"to_address":{"id":"adr_ce288f2d8aef4cb2a6d7590db60bfd3c","object":"Address","created_at":"2019-09-10T08:30:28Z","updated_at":"2019-09-10T08:30:33Z","name":"Newt
+        Scamander","company":null,"street1":"200 19th St","street2":null,"city":"Birmingham","state":"AL","zip":"35218-1549","country":"US","phone":"123456789","email":null,"mode":"test","carrier_facility":null,"residential":true,"federal_tax_id":null,"state_tax_id":null,"verifications":{"zip4":{"success":true,"errors":[],"details":null}}},"usps_zone":1,"return_address":{"id":"adr_3ce8949deecd405e800cfb69326a60d1","object":"Address","created_at":"2019-09-10T08:30:29Z","updated_at":"2019-09-10T08:30:29Z","name":null,"company":null,"street1":"2630
+        Cahaba Rd","street2":null,"city":"Birmingham","state":"AL","zip":"35223","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"state_tax_id":null,"verifications":{}},"buyer_address":{"id":"adr_ce288f2d8aef4cb2a6d7590db60bfd3c","object":"Address","created_at":"2019-09-10T08:30:28Z","updated_at":"2019-09-10T08:30:33Z","name":"Newt
+        Scamander","company":null,"street1":"200 19th St","street2":null,"city":"Birmingham","state":"AL","zip":"35218-1549","country":"US","phone":"123456789","email":null,"mode":"test","carrier_facility":null,"residential":true,"federal_tax_id":null,"state_tax_id":null,"verifications":{"zip4":{"success":true,"errors":[],"details":null}}},"forms":[],"fees":[{"object":"Fee","type":"LabelFee","amount":"0.01000","charged":true,"refunded":false},{"object":"Fee","type":"PostageFee","amount":"7.32000","charged":true,"refunded":false}],"id":"shp_b0ef3e43ec23460483d972c58cab5fa3","object":"Shipment"}'
     http_version: 
-  recorded_at: Wed, 02 Dec 2015 21:34:24 GMT
-recorded_with: VCR 3.0.0
+  recorded_at: Tue, 10 Sep 2019 08:30:34 GMT
+recorded_with: VCR 5.0.0

@@ -4,185 +4,199 @@ http_interactions:
     method: post
     uri: https://api.easypost.com/v2/addresses
     body:
-      encoding: US-ASCII
-      string: address[street1]=10%20Lovely%20Street&address[street2]=Northwest&address[city]=Herndon&address[zip]=35005&address[phone]=555-555-0199&address[company]=Company&address[name]=John%20Doe&address[state]=AL&address[country]=US
+      encoding: UTF-8
+      string: address[street1]=A%20Different%20Road&address[street2]=Northwest&address[city]=Manville&address[zip]=08835&address[phone]=555-555-0199&address[company]=Company&address[name]=John%20Doe&address[state]=NJ&address[country]=US
     headers:
       Accept:
-      - "*/*; q=0.5, application/xml"
-      Accept-Encoding:
-      - gzip, deflate
+      - "*/*"
       User-Agent:
-      - EasyPost/v2 RubyClient/2.1.9
+      - EasyPost/v2 RubyClient/3.0.1
       Authorization:
       - Bearer CvzYtuda6KRI9JjG7SAHbA
       Content-Type:
       - application/x-www-form-urlencoded
       Content-Length:
-      - '221'
+      - '222'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.easypost.com
   response:
     status:
       code: 201
       message: Created
     headers:
-      Date:
-      - Wed, 02 Dec 2015 21:34:07 GMT
-      Status:
-      - 201 Created
-      Connection:
-      - close
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
+      X-Ep-Request-Uuid:
+      - d9da60c35d775cdcee70bbc500002105
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, private
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
       Location:
-      - "/api/v2/addresses/adr_15ccc4798b894a5b86eac945ac39eee2"
+      - "/api/v2/addresses/adr_c309ef7d182c44698e3f6dafc50e3fb2"
       Content-Type:
       - application/json; charset=utf-8
-      Etag:
-      - W/"3e6b2f3dae76b430cc6037251613aff6"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 339cc5c5-9c3a-4dc1-8e09-887844cc46d3
       X-Runtime:
-      - '2.136903'
+      - '0.035265'
+      Transfer-Encoding:
+      - chunked
       X-Node:
-      - web6sj, e2304ceaff
+      - bigweb7sj
+      X-Version-Label:
+      - easypost-201909091924-20b1629d24-master
       X-Backend:
       - easypost
+      X-Canary:
+      - direct
       X-Proxied:
-      - lb5sj, 6568750064
+      - extlb2wdc ff5a2958df
+      - intlb2sj ff5a2958df
+      - intlb2wdc ff5a2958df
       Strict-Transport-Security:
-      - max-age=86400
+      - max-age=15768000; includeSubDomains; preload
     body:
-      encoding: UTF-8
-      string: '{"id":"adr_15ccc4798b894a5b86eac945ac39eee2","object":"Address","created_at":"2015-12-02T21:34:05Z","updated_at":"2015-12-02T21:34:05Z","name":"John
-        Doe","company":"Company","street1":"10 Lovely Street","street2":"Northwest","city":"Herndon","state":"AL","zip":"35005","country":"US","phone":"5555550199","email":null,"mode":"test","carrier_facility":null,"residential":false,"federal_tax_id":null}'
+      encoding: ASCII-8BIT
+      string: '{"id":"adr_c309ef7d182c44698e3f6dafc50e3fb2","object":"Address","created_at":"2019-09-10T08:20:44Z","updated_at":"2019-09-10T08:20:44Z","name":"John
+        Doe","company":"Company","street1":"A Different Road","street2":"Northwest","city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"5555550199","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"state_tax_id":null,"verifications":{}}'
     http_version: 
-  recorded_at: Wed, 02 Dec 2015 21:34:09 GMT
+  recorded_at: Tue, 10 Sep 2019 08:20:45 GMT
 - request:
     method: post
     uri: https://api.easypost.com/v2/addresses
     body:
-      encoding: US-ASCII
-      string: address[street1]=1600%20Pennsylvania%20Ave%20NW&address[city]=Washington&address[zip]=20500&address[phone]=(202)%20456-1111&address[company]=Spree%20Test%20Store%205&address[state]=AL&address[country]=US
+      encoding: UTF-8
+      string: address[street1]=131%20S%208th%20Ave&address[city]=Manville&address[zip]=08835&address[phone]=(202)%20456-1111&address[state]=NJ&address[country]=US
     headers:
       Accept:
-      - "*/*; q=0.5, application/xml"
-      Accept-Encoding:
-      - gzip, deflate
+      - "*/*"
       User-Agent:
-      - EasyPost/v2 RubyClient/2.1.9
+      - EasyPost/v2 RubyClient/3.0.1
       Authorization:
       - Bearer CvzYtuda6KRI9JjG7SAHbA
       Content-Type:
       - application/x-www-form-urlencoded
       Content-Length:
-      - '203'
+      - '148'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.easypost.com
   response:
     status:
       code: 201
       message: Created
     headers:
-      Date:
-      - Wed, 02 Dec 2015 21:34:08 GMT
-      Status:
-      - 201 Created
-      Connection:
-      - close
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
+      X-Ep-Request-Uuid:
+      - d9da60c35d775cddee7392af00002122
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, private
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
       Location:
-      - "/api/v2/addresses/adr_b54ea0ecb8be488d937c756020ee05ce"
+      - "/api/v2/addresses/adr_1270bc6e45f140f4817f4e98128ec7b1"
       Content-Type:
       - application/json; charset=utf-8
-      Etag:
-      - W/"3049c1f5fba29842ef2751de45b4be46"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - e18fa1eb-0588-4302-952a-f11c1ea2c4e7
       X-Runtime:
-      - '0.044879'
+      - '0.034150'
+      Transfer-Encoding:
+      - chunked
       X-Node:
-      - web6sj, e2304ceaff
+      - bigweb2sj
+      X-Version-Label:
+      - easypost-201909091924-20b1629d24-master
       X-Backend:
       - easypost
       X-Proxied:
-      - lb5sj, 6568750064
+      - extlb2wdc ff5a2958df
+      - intlb2sj ff5a2958df
+      - intlb2wdc ff5a2958df
       Strict-Transport-Security:
-      - max-age=86400
+      - max-age=15768000; includeSubDomains; preload
     body:
-      encoding: UTF-8
-      string: '{"id":"adr_b54ea0ecb8be488d937c756020ee05ce","object":"Address","created_at":"2015-12-02T21:34:08Z","updated_at":"2015-12-02T21:34:08Z","name":null,"company":"Spree
-        Test Store 5","street1":"1600 Pennsylvania Ave NW","street2":null,"city":"Washington","state":"AL","zip":"20500","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":false,"federal_tax_id":null}'
+      encoding: ASCII-8BIT
+      string: '{"id":"adr_1270bc6e45f140f4817f4e98128ec7b1","object":"Address","created_at":"2019-09-10T08:20:45Z","updated_at":"2019-09-10T08:20:45Z","name":null,"company":null,"street1":"131
+        S 8th Ave","street2":null,"city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"state_tax_id":null,"verifications":{}}'
     http_version: 
-  recorded_at: Wed, 02 Dec 2015 21:34:09 GMT
+  recorded_at: Tue, 10 Sep 2019 08:20:45 GMT
 - request:
     method: post
     uri: https://api.easypost.com/v2/parcels
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: parcel[weight]=10.0
     headers:
       Accept:
-      - "*/*; q=0.5, application/xml"
-      Accept-Encoding:
-      - gzip, deflate
+      - "*/*"
       User-Agent:
-      - EasyPost/v2 RubyClient/2.1.9
+      - EasyPost/v2 RubyClient/3.0.1
       Authorization:
       - Bearer CvzYtuda6KRI9JjG7SAHbA
       Content-Type:
       - application/x-www-form-urlencoded
       Content-Length:
       - '19'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.easypost.com
   response:
     status:
       code: 201
       message: Created
     headers:
-      Date:
-      - Wed, 02 Dec 2015 21:34:08 GMT
-      Status:
-      - 201 Created
-      Connection:
-      - close
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
+      X-Ep-Request-Uuid:
+      - d9da60c35d775cdeee7282d500002139
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, private
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
       Location:
-      - "/api/v2/parcels/prcl_4d13a4e9862a44b6b6e94434839d2e4e"
+      - "/api/v2/parcels/prcl_5374e3fbff504a159591a69dace5a804"
       Content-Type:
       - application/json; charset=utf-8
-      Etag:
-      - W/"a41c45c45bc1c5533417e908ce73987f"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 2fec96c1-b750-4dd9-bde2-ec77a32d3b88
       X-Runtime:
-      - '0.049316'
+      - '0.027796'
+      Transfer-Encoding:
+      - chunked
       X-Node:
-      - web6sj, e2304ceaff
+      - bigweb10sj
+      X-Version-Label:
+      - easypost-201909091924-20b1629d24-master
       X-Backend:
       - easypost
       X-Proxied:
-      - lb5sj, 6568750064
+      - extlb2wdc ff5a2958df
+      - intlb1sj ff5a2958df
+      - intlb1wdc ff5a2958df
       Strict-Transport-Security:
-      - max-age=86400
+      - max-age=15768000; includeSubDomains; preload
     body:
-      encoding: UTF-8
-      string: '{"id":"prcl_4d13a4e9862a44b6b6e94434839d2e4e","object":"Parcel","created_at":"2015-12-02T21:34:08Z","updated_at":"2015-12-02T21:34:08Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":10.0,"mode":"test"}'
+      encoding: ASCII-8BIT
+      string: '{"id":"prcl_5374e3fbff504a159591a69dace5a804","object":"Parcel","created_at":"2019-09-10T08:20:46Z","updated_at":"2019-09-10T08:20:46Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":10.0,"mode":"test"}'
     http_version: 
-  recorded_at: Wed, 02 Dec 2015 21:34:10 GMT
-recorded_with: VCR 3.0.0
+  recorded_at: Tue, 10 Sep 2019 08:20:46 GMT
+recorded_with: VCR 5.0.0

@@ -9,16 +9,16 @@ http_interactions:
     headers:
       Accept:
       - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
       User-Agent:
-      - EasyPost/v2 RubyClient/2.7.0
+      - EasyPost/v2 RubyClient/3.0.1
       Authorization:
       - Bearer CvzYtuda6KRI9JjG7SAHbA
       Content-Type:
       - application/x-www-form-urlencoded
       Content-Length:
       - '221'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Host:
       - api.easypost.com
   response:
@@ -33,7 +33,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       X-Ep-Request-Uuid:
-      - d3b97494-d901-4f2f-b23c-a9c162b5bd59
+      - d9da60c35d775ce9ee6f2363000022c8
       Cache-Control:
       - no-cache, no-store, must-revalidate, private
       Pragma:
@@ -41,35 +41,29 @@ http_interactions:
       Expires:
       - '0'
       Location:
-      - "/api/v2/addresses/adr_8033df9eb5e24877891691a2dad2700f"
+      - "/api/v2/addresses/adr_c8d04c74fe274a20af4c5b7e36e5c4f6"
       Content-Type:
       - application/json; charset=utf-8
       X-Runtime:
-      - '0.020183'
-      Content-Encoding:
-      - gzip
+      - '0.085230'
       Transfer-Encoding:
       - chunked
       X-Node:
-      - 0c5331f72e
-      - easypost
-      - web11sj
+      - bigweb9sj
+      X-Version-Label:
+      - easypost-201909091924-20b1629d24-master
       X-Backend:
       - easypost
       X-Proxied:
-      - lb5sj, 8657dcde98
+      - extlb2wdc ff5a2958df
+      - intlb1sj ff5a2958df
+      - intlb1wdc ff5a2958df
       Strict-Transport-Security:
       - max-age=15768000; includeSubDomains; preload
     body:
       encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAA4SQu27DMAxFf8XQnACSbNePLWinAM3SduliMBYNq5AlQ6bd
-        R5B/r2QHGbpUE3l5dC/BC9OK1QyUb0qepqqr8JyjzMqiKCvxUAmQCpQsOO/Y
-        jrnzB7YU+INSHqcpSK1HIFQNRFlyUex5vufyVfI6y+o0ew/MPKp/GQsDhunR
-        9TZ5chid3TCC/Q7i463asYk8IoloI/LklBTUJ4cF7xMZJifnqf/EiaKHpmjw
-        DHbRxmxcWCVSx9D86DGUvCzTfA2cLfnIv72EduydjWS+Pi6qKog4gDastrMx
-        OzY4FQG6ZYH3Gn3TQavNmrtR4VBaoSUN948dKvRgGoKvJt5/U9fV/mgLet3p
-        Fkg7O7H6cr3+AgAA//8DAJtia7ayAQAA
+      string: '{"id":"adr_c8d04c74fe274a20af4c5b7e36e5c4f6","object":"Address","created_at":"2019-09-10T08:20:57Z","updated_at":"2019-09-10T08:20:57Z","name":"John
+        Doe","company":"Company","street1":"215 N 7th Ave","street2":"Northwest","city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"5555550199","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"state_tax_id":null,"verifications":{}}'
     http_version: 
-  recorded_at: Tue, 02 May 2017 20:44:34 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Tue, 10 Sep 2019 08:20:57 GMT
+recorded_with: VCR 5.0.0

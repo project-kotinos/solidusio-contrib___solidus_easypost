@@ -8,9 +8,11 @@ RSpec.describe Spree::Address, :vcr do
   describe '#easypost_address' do
     subject { address.easypost_address }
 
-    it { is_expected.to be_a EasyPost::Address }
+    it 'is an EasyPost::Address object' do
+      expect(subject).to be_a(EasyPost::Address)
+    end
 
-    it do
+    it 'has the correct attributes' do
       # combination of original address factory from easy post
       # and the spree_modification factories
       is_expected.to have_attributes(

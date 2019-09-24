@@ -22,4 +22,4 @@ bundle install --jobs=3 --retry=3
 bundle exec rake test_app
 # script
 chmod 0600 /root/.netrc
-bundle exec rspec spec
+bundle exec rake --trace spec

@@ -1,0 +1,51 @@
+build_targets:
+- commands:
+  - apt-get update
+  - apt-get install -y tzdata
+  - gem install bundler -v 2.0.1
+  - bundle install --jobs=3 --retry=3
+  - bundle exec rake test_app
+  - chmod 0600 /root/.netrc
+  - bundle exec rake --trace spec
+  container:
+    image: yourbase/yb_ubuntu:16.04
+  name: default
+  environment:
+      - SOLIDUS_BRANCH=v2.8 
+      - DB=postgres
+      - DB_USERNAME=root
+      - DB_PASSWORD=root
+      - DB_HOST={{ .Containers.IP "db" }}
+      - DATABASE_URL=postgres://root:root@{{ .Containers.IP "db" }}:5432/solidus_easypost_solidus_test
+      - DATABASE_CLEANER_ALLOW_REMOTE_DATABASE_URL=true
+      - DEBIAN_FRONTEND=noninteractive
+      - CI=true
+      - TRAVIS=true
+      - CONTINUOUS_INTEGRATION=true
+      - USER=travis
+      - LANG=en_US.UTF-8
+      - LC_ALL=en_US.UTF-8
+      - RAILS_ENV=test
+      - RACK_ENV=test
+      - MERB_ENV=test
+      - JRUBY_OPTS="--server -Dcext.enabled=false -Xcompile.invokedynamic=false"
+      - SKIPPER_IGNORE=chmod 0600 /root/.netrc
+  dependencies:
+      containers:
+        db:
+          image: postgres:9.4
+          environment:
+            - POSTGRES_PASSWORD=root
+            - POSTGRES_USER=root
+            - POSTGRES_DB=solidus_easypost_solidus_test
+          port_check:
+            port: 5432
+            timeout: 45
+ci:
+  builds:
+  - build_target: default
+    name: default
+dependencies:
+  build:
+  - ruby:2.5.1
+  - node:10.15.1

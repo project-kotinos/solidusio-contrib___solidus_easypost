@@ -5,6 +5,7 @@ build_targets:
   - gem install bundler -v 2.0.1
   - bundle install --jobs=3 --retry=3
   - bundle exec rake test_app
+  - touch /root/.netrc
   - chmod 0600 /root/.netrc
   - bundle exec rake --trace spec
   container:
